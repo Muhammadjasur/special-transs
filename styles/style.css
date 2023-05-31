@@ -1,4 +1,4 @@
-@import'./fonts.css';
+@import url(./fonts.css);
 *{
     margin: 0;
     padding: 0;
@@ -39,11 +39,12 @@ h2{
 
 }
 .hero{
-    background-image: url(/images/Rectangle\ 5.jpg);
+    background-image: url(../images/Rectangle\ 5.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 186px;
 
 }
 .header{
@@ -57,4 +58,57 @@ h2{
     display: flex;
     gap: 58px;
 
+}
+.header .menu .menu-link:hover{
+    color:#27ae60;
+}
+.hero .title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    width: 700px;
+
+}
+.hero .subtitle{
+    font-size: 20px;
+    color: #fff;
+    width: 770px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    line-height: 28px;
+
+    
+}
+.hero .block{
+    display: inline-block;
+    background: radial-gradient(#8787876c 30%, transparent 70%);
+    backdrop-filter: blur(3px);
+}
+/* services */
+.services{
+    padding: 80px 0;
+
+}
+.services .wrapper{
+    display: flex;
+    margin-top: 58px;
+    justify-content:space-between;
+
+}
+.services .wrapper .card{
+    border: 1px solid #a8a8a8;
+    border-radius: 8px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 273px;
+}
+.services .card .text{
+    font-size: 14px;
+    font-weight: 400;
+    color: #393838;
+}
+.services .card .text .accent{
+    color: #27ae60;
 }
